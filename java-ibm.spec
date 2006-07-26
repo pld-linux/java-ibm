@@ -16,9 +16,9 @@ Source0:	IBMJava2-SDK-142.ppc.tgz
 %endif
 NoSource:	0
 URL:		http://www.ibm.com/developer/java/
-Provides:	jre = %{version}
-Provides:	jdk = %{version}
 Provides:	jar
+Provides:	jdk = %{version}
+Provides:	jre = %{version}
 ExclusiveArch:	%{ix86} ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
