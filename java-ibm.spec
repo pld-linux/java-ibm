@@ -22,8 +22,8 @@ Provides:	jre = %{version}
 ExclusiveArch:	%{ix86} ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         javadir         %{_libdir}/java
-%define         jredir          %{_libdir}/java/jre
+%define		javadir		%{_libdir}/java
+%define		jredir		%{_libdir}/java/jre
 %define		sdkdir		%{_libdir}/java
 
 %description
