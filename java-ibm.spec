@@ -20,6 +20,7 @@ Provides:	jar
 Provides:	jdk = %{version}
 Provides:	jre = %{version}
 ExclusiveArch:	%{ix86} ppc
+# TODO: %{x8664} ppc64 s390 s390x
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		javadir		%{_libdir}/java
