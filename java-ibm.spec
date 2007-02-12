@@ -1,6 +1,6 @@
 %define __spec_install_post exit 0
 Summary:	IBM Java virtual machine
-Summary(pl):	Implementacja Javy firmy IBM
+Summary(pl.UTF-8):   Implementacja Javy firmy IBM
 Name:		ibm-java
 Version:	1.4.2
 Release:	0.1
@@ -30,8 +30,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is IBM's Java implementation.
 
-%description -l pl
-Pakiet zawiera implementacjê Javy firmy IBM.
+%description -l pl.UTF-8
+Pakiet zawiera implementacjÄ™ Javy firmy IBM.
 
 %prep
 %setup -q -n IBMJava2-%{_build_arch}-%(echo %{version} | tr -d .)
