@@ -1,6 +1,6 @@
 %define __spec_install_post exit 0
 Summary:	IBM Java virtual machine
-Summary(pl.UTF-8):   Implementacja Javy firmy IBM
+Summary(pl.UTF-8):	Implementacja Javy firmy IBM
 Name:		ibm-java
 Version:	1.4.2
 Release:	0.1
