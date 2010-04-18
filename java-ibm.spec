@@ -1,3 +1,5 @@
+# TODO:
+# - unify with other JDK specs
 %define __spec_install_post exit 0
 Summary:	IBM Java virtual machine
 Summary(pl.UTF-8):	Implementacja Javy firmy IBM
@@ -78,10 +80,10 @@ echo "JITC_PROCESSOR_TYPE=6" > $RPM_BUILD_ROOT/etc/env.d/JITC_PROCESSOR_TYPE
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,755)
+%defattr(644,root,root,755)
 %doc docs/*
 %attr(755,root,root) %{_bindir}/*
 %{javadir}
 %ifarch ppc
-%attr(644,root,root) %config(noreplace,missingok) %verify(not md5 mtime size) /etc/env.d/*
+%config(noreplace,missingok) %verify(not md5 mtime size) /etc/env.d/*
 %endif
